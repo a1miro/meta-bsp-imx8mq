@@ -1,4 +1,4 @@
-SRC_URI_append_cl-som-imx8 = " \
+SRC_URI:append:cl-som-imx8 = " \
 	file://0000-cl-som-imx8-Add-machine-support.patch \
 	file://0001-cl-som-imx8-dts-Update-for-5.4.24.patch \
 	file://0002-sn65dsi83-Fix-build-issue-for-5.4.24.patch \

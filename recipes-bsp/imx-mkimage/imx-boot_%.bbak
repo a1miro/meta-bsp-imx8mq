@@ -1,4 +1,4 @@
-FILESEXTRAPATHS_prepend := "${THISDIR}/compulab/imx8mq:"
+FILESEXTRAPATHS:prepend := "${THISDIR}/compulab/imx8mq:"
 
 require compulab/imx8mq.inc
 
