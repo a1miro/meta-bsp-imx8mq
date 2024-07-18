@@ -25,7 +25,6 @@ PACKAGE_CLASSES = "package_deb"
 DL_DIR = "/opt/fsl-imx-xwayland/downloads"
 SSTATE_DIR = "/opt/fsl-imx-xwayland/sstate-cache"
 UBOOT_CONFIG = "sd"
-BB_NUMBER_THREADS = '12'
 MACHINE_FEATURES:remove += "optee"
 DISTRO_FEATURES:remove += "optee"
 IMAGE_INSTALL:remove += "optee-test optee-os optee-client optee-examples"
