@@ -1,1 +1,1 @@
-TEMPLATECONF=${TEMPLATECONF:-/sources/meta-bsp-imx8mq/conf/templates/default}
+TEMPLATECONF=${TEMPLATECONF:-../meta-bsp-imx8mq/conf/templates/default}
