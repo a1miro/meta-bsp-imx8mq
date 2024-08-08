@@ -5,7 +5,7 @@ FILESEXTRAPATHS:prepend := "${THISDIR}/compulab/imx8mq:"
 # it's okay if the build directory under the project root, but it will be a problem
 # otherwise.
 POKYROOT="${@os.path.abspath(os.path.join(os.getcwd(), ".."))}"
-U_BOOT_IMX_SRCPATH = "${POKYROOT}/workspace/uboot-imx"
+U_BOOT_IMX_SRCPATH = "${POKYROOT}/workspace/u-boot-imx"
 EXTERNALSRC:pn-u-boot-imx = "${U_BOOT_IMX_SRCPATH}"
 
 include compulab/imx8mq.inc
