@@ -30,6 +30,12 @@ DISTRO_FEATURES:remove += "optee"
 # Disable secure boot features
 IMAGE_INSTALL:remove += "optee-test optee-os optee-client optee-examples"
 # Include SSH client in the image
-EXTRA_IMAGE_FEATURES = "ssh-server-openssh"
+EXTRA_IMAGE_FEATURES = "\
+ssh-server-openssh \
+allow-empty-password \
+allow-root-login \
+debug-tweaks \
+empty-root-password \
+"
 BB_NUMBER_THREADS="8"
 PARALLEL_MAKE="-j8"
