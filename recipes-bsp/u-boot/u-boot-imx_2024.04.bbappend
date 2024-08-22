@@ -8,7 +8,8 @@ POKYROOT="${@os.path.abspath(os.path.join(os.getcwd(), ".."))}"
 U_BOOT_IMX_SRCPATH = "${POKYROOT}/workspace/u-boot-imx"
 EXTERNALSRC:pn-u-boot-imx = "${U_BOOT_IMX_SRCPATH}"
 
-include compulab/imx8mq.inc
+#include compulab/imx8mq.inc
+UBOOT_INITIAL_ENV = "${PN}-initial-env"
 
 #SRCREV="${AUTOREV}"
 #BRANCH="a1miro/lf-2024.04"

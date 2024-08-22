@@ -28,3 +28,5 @@ UBOOT_CONFIG = "sd"
 MACHINE_FEATURES:remove += "optee"
 DISTRO_FEATURES:remove += "optee"
 IMAGE_INSTALL:remove += "optee-test optee-os optee-client optee-examples"
+# Include SSH client in the image
+IMAGE_INSTALL:append = " openssh-scp"
