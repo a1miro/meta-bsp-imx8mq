@@ -20,8 +20,6 @@ ACCEPT_FSL_EULA = "1"
 
 # Switch to Debian packaging and include package-management in the image
 PACKAGE_CLASSES = "package_deb"
-EXTRA_IMAGE_FEATURES += "package-management"
-PACKAGE_CLASSES = "package_deb"
 DL_DIR = "${TOPDIR}/downloads"
 SSTATE_DIR = "${TOPDIR}/sstate-cache"
 UBOOT_CONFIG = "sd"
@@ -31,6 +29,7 @@ DISTRO_FEATURES:remove += "optee"
 IMAGE_INSTALL:remove += "optee-test optee-os optee-client optee-examples"
 # Include SSH client in the image
 EXTRA_IMAGE_FEATURES = "\
+package-management \
 ssh-server-openssh \
 allow-empty-password \
 allow-root-login \
